@@ -4,13 +4,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-
-// Struct for configuration options
-struct digits_config {
-    int use_plural;  // If 1, use plural forms where applicable
-    int use_og;      // If 1, include "og" between tens and ones
-    int skip_one;    // If 1, skip "et" in front of hundreds or thousands
-};
+#include "digits_config.h"
 
 // Function to convert a number to Danish words
 void digit_to_danish(int num, char* buffer, struct digits_config config);
